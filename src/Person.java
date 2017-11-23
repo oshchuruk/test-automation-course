@@ -34,7 +34,7 @@ public class Person {
         System.out.println(bob2.equals(bob));
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1);
             int result = 5/0;
         } catch (Exception e) {
             e.printStackTrace();
@@ -48,6 +48,13 @@ public class Person {
         System.out.println(jack.hashCode());
         System.out.println(bob.hashCode());
         System.out.println(bob2.hashCode());
+
+
+        if (bob.equals(bob2) && bob == jack){
+            System.out.println("wow");
+        }else {
+            System.out.println("not wow");
+        }
     }
 }
 
